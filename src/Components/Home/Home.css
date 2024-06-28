@@ -1,0 +1,84 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.home {
+    background-color: rgb(217, 91, 1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.home-header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.home-header p {
+  margin: 10px 0 0;
+  font-size: 18px;
+  color: #777;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-intro, .home-gallery, .home-contact {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.home-intro h2, .home-gallery h2, .home-contact h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.home-intro p, .home-contact p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.home-gallery .gallery-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.home-gallery .gallery-images img {
+  width: 30%;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.home-gallery .gallery-images img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate__fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animate__zoomIn {
+  animation: zoomIn 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
